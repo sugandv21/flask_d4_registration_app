@@ -2,7 +2,8 @@ from flask import Flask, render_template, flash
 from forms import RegistrationForm
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = 'your_secret_key_here' 
+app.config['SECRET_KEY'] = 'f2d9e3d87b1442e49bdfd6a23b1c9a5e'
+
 
 @app.route('/')
 def home():
@@ -16,5 +17,4 @@ def register():
     return render_template('layout/register.html', form=form)
 
 if __name__ == '__main__':
-    app.run(debug=False)
-
+    app.run(debug=True)  # Use debug=True while developing
