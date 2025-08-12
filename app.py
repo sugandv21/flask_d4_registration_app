@@ -17,4 +17,5 @@ def register():
     return render_template('layout/register.html', form=form)
 
 if __name__ == '__main__':
-    app.run(debug=True)  # Use debug=True while developing
+    app.run(debug=False)  
+
